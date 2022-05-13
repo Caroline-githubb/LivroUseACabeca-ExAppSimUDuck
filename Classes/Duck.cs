@@ -23,6 +23,17 @@ namespace SimUDuck.Classes
             quackBehavior.Quack();
         }
 
+        public void SetFlyBehavior(IFlyBehavior fb)
+        {
+            flyBehavior = fb;
+        }
+
+           public void SetQuackBehavior(IQuackBehavior qb)
+        {
+            quackBehavior = qb;
+        }
+
+
         public void Swim()
         {
             System.Console.WriteLine("All ducks float, even toys ...");
